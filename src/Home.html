@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save a post</title>
+  <style>
+    body {
+      background-color: #F0F0F0;
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      font-size: 28px;
+      margin-top: 40px;
+    }
+    form {
+      margin-top: 30px;
+      text-align: center;
+    }
+    label {
+      font-size: 16px;
+      color: #333;
+      margin-right: 10px;
+    }
+    input[type=text] {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      width: 200px;
+      box-sizing: border-box;
+    }
+    input[type=button] {
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    input[type=button]:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+<h1>Archive a instagram post</h1>
+<form>
+  <label for="instagram-link">Enter your Instagram link:</label>
+  <input type="text" id="instagram-link" name="instagram-link"><br><br>
+  <input type="button" value="Save" onclick="saveInstagramLink()">
+  <input type="button" value="Archive" onclick="openArchivePage()">
+</form>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Archive</title>
+  <style>
+    body {
+      background-color: #F0F0F0;
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      font-size: 28px;
+      margin-top: 40px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 800px;
+      margin-top: 30px;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #ddd;
+    }
+    tr:hover {
+      background-color: #ccc;
+    }
+    .tag-column {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #222;
+    }
+    .post-preview {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body onload="displaySavedPosts()">
+<h1>Archive</h1>
+<input type="text" id="tag-input" placeholder="Filter by Tag">
+<button onclick="filterArchiveByTag()">Filter</button>
+<table>
+  <thead>
+  <tr>
+    <th>Post Preview</th>
+    <th>Author</th>
+    <th>Likes</th>
+    <th>Comments</th>
+    <th>Tags</th>
+    <th>Archiver Name</th>
+  </tr>
+  </thead>
+  <tbody id="post-table-body">
+  </tbody>
+</table>
+<button onclick="clearArchive()">Clear Archive</button>
+<script src="script.js"></script>
+</body>
+</html>
