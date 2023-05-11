@@ -45,15 +45,26 @@
     input[type=button]:hover {
       background-color: #666;
     }
+    
+    /* Customize the View Archive button */
+    input[value=" View archive"] {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #000;
+      margin-right: 10px;
+    }
+    input[value=" View archive"]:hover {
+      background-color: #f2f2f2;
+    }
   </style>
 </head>
 <body>
-<h1>Archive a instagram post</h1>
+<h1>Archive an Instagram post</h1>
 <form>
   <label for="instagram-link">Enter your Instagram link:</label>
   <input type="text" id="instagram-link" name="instagram-link"><br><br>
   <input type="button" value="Save" onclick="saveInstagramLink()">
-  <input type="button" value="Archive" onclick="openArchivePage()">
+  <input type="button" value=" View archive" onclick="openArchivePage()">
 </form>
 <script src="script.js"></script>
 </body>
